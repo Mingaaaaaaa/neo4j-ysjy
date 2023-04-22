@@ -2,7 +2,7 @@
   "name": "react-neovis-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jackdbd.github.io/react-neovis-example",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
