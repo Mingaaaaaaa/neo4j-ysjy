@@ -15,13 +15,11 @@ const App = () => {
     useEffect(() => {
         const config = {
             container_id: 'id1',
-            server_url: "bolt://124.222.4.79",
+            server_url: "neo4j://124.222.4.79",
             server_user: "neo4j",
             server_password: "password",
-            driverConfig: { 
-                 encrypted: "ENCRYPTION_ON",
-                trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES"
-                },
+            encrypted: "ENCRYPTION_ON",
+            trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
             labels: {
                 Troll: {
                     caption: "user_key",
