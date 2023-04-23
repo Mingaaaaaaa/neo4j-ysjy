@@ -15,7 +15,7 @@ const App = () => {
     useEffect(() => {
         const config = {
             container_id: 'id1',
-            server_url: "neo4j://124.222.4.79",
+            server_url: "neo4j+s://124.222.4.79",
             server_user: "neo4j",
             server_password: "password",
             driverConfig: { 
