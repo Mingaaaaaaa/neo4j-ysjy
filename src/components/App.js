@@ -19,7 +19,7 @@ const App = () => {
             server_user: "neo4j",
             server_password: "password",
             driverConfig: { 
-                encrypted: "ENCRYPTION_ON",
+                // encrypted: "ENCRYPTION_ON",
                 trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES"
                 },
             labels: {
