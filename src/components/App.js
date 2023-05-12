@@ -19,7 +19,7 @@ const App = () => {
             server_user: "neo4j",
             server_password: "password",
             encrypted: "ENCRYPTION_ON",
-            // trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+            trust: "TRUST_ALL_CERTIFICATES",
             labels: {
                 Troll: {
                     caption: "user_key",
