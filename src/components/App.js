@@ -15,8 +15,7 @@ const App = () => {
     useEffect(() => {
         const config = {
             container_id: 'id1',
-            server_url: "neo4j://ysjy.alplune.top:7687",
-            
+            server_url: "neo4j+s://ysjy.alplune.top:7687",
             server_user: "neo4j",
             server_password: "password",
             encrypted: "ENCRYPTION_OFF",
