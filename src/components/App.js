@@ -8,48 +8,48 @@ import Neovis from "neovis.js/dist/neovis.js";
 // const NEO4J_PASSWORD = "beacons-ramps-subordinates";
 
 const App = () => {
-    // const data = window.location.href.split('=')[1].toString()
-    //MATCH (a:Airport)RETURNaLIMIT4
-    // console.log(data.slice(0, 5) + " " + data.slice(5,16)+' '+data.slice(16,22)+" "+data.slice(22,23)+" "+data.slice(23,28)+" "+data.slice(27));
-    const visRef = useRef();
-    useEffect(() => {
-        const config = {
-            container_id: 'id1',
-            server_url: "neo4j+s://ysjy.alplune.top:7687",
-            server_user: "neo4j",
-            server_password: "password",
-            encrypted: "ENCRYPTION_OFF",
-            trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
-            labels: {
-                Troll: {
-                    caption: "user_key",
-                    size: "pagerank",
-                    community: "community",
-                },
-            },
-            relationships: {
-                RETWEETS: {
-                    caption: false,
-                    thickness: "count",
-                },
-            },
-            initial_cypher: "MATCH (n) RETURN n LIMIT 25"
-        };
-        const vis = new Neovis(config);
-        vis.render();
-    }, []);
+  // const data = window.location.href.split('=')[1].toString()
+  //MATCH (a:Airport)RETURNaLIMIT4
+  // console.log(data.slice(0, 5) + " " + data.slice(5,16)+' '+data.slice(16,22)+" "+data.slice(22,23)+" "+data.slice(23,28)+" "+data.slice(27));
+  const visRef = useRef();
+  useEffect(() => {
+    const config = {
+      container_id: "id1",
+      server_url: "neo4j://ysjy.alplune.top:7687",
+      server_user: "neo4j",
+      server_password: "password",
+      encrypted: "ENCRYPTION_ON",
+      trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+      labels: {
+        Troll: {
+          caption: "user_key",
+          size: "pagerank",
+          community: "community",
+        },
+      },
+      relationships: {
+        RETWEETS: {
+          caption: false,
+          thickness: "count",
+        },
+      },
+      initial_cypher: "MATCH (n) RETURN n LIMIT 25",
+    };
+    const vis = new Neovis(config);
+    vis.render();
+  }, []);
 
-    return (
-        <div
-            id='id1'
-            ref={visRef}
-            style={{
-                width: 400,
-                height: 800,
-                backgroundColor: "rgb(215 247 229)",
-            }}
-        />
-    );
+  return (
+    <div
+      id="id1"
+      ref={visRef}
+      style={{
+        width: 400,
+        height: 800,
+        backgroundColor: "rgb(215 247 229)",
+      }}
+    />
+  );
 };
 
 //   return (
