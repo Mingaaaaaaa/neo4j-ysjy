@@ -18,8 +18,8 @@ const App = () => {
       server_url: "neo4j://ysjy.alplune.top",
       server_user: "neo4j",
       server_password: "password",
-      // encrypted: "ENCRYPTION_ON",
-      // trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+      encrypted: "ENCRYPTION_ON",
+      trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
       // driverConfig: {
       //     encrypted: "ENCRYPTION_ON",
       //     trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES"
